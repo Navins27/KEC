@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="day 2 css.html">
+</head>
+<body>
+    <div class="containers">
+        <div class="item">good</div>
+        <div class="item">better</div>
+        <div class="item">best</div>
+        <div class="item">good</div>
+        <div class="item">better</div>
+        <div class="item">best</div>
+
+
+    </div>
+    <div class="diamond"></div>
+</body>
+<style>
+    .containers {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction:row-reverse;
+        align-items: center;
+        flex-wrap: wrap-reverse;
+        
+    }
+    .item {
+        
+        padding: 100px;
+        justify-self: unset;
+        flex-direction: column;
+        padding-top: 50px;
+        padding-right: 30px;
+        padding-bottom: 50px;
+        padding-left: 30px;
+            
+    }
+    .containers{
+        display: grid;
+        grid-template-columns: repeat(3,4fr);
+        gap: 100px;
+        background-color: rgb(179, 21, 157);
+        width: 600px;
+        border: 100px solid green;
+        padding: 10px;
+        margin: 20px;
+
+    }
+    .item{
+        background-color: rgb(145, 181, 38);
+        opacity: 1.4;
+        margin: auto;
+        border: 20px;
+        border-color: brown;
+    }
+</style>
+
+
+</html>
